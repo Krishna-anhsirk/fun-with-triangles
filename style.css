@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-colour: #e8dfca;
+  --secondary-colour: #5c2e7e;
+  --clr-dark: #000;
+}
+
+body {
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
+}
+
+.nav-bar {
+  background-color: var(--secondary-colour);
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: var(--primary-colour);
+  padding-right: 1rem;
+}
+
+.heading {
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 2.5rem;
+}
+
+.heading__subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.formula {
+  border: 1px solid var(--secondary-colour);
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  width: fit-content;
+}
+
+.container {
+  display: flex;
+  margin: 1.5rem auto;
+  flex-direction: column;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+.container label {
+  padding: 0.7rem 0rem;
+}
+
+.container input {
+  padding: 0.5rem;
+}
+
+.container button {
+  margin: 1.5rem auto;
+  width: 50%;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.question-container {
+  border: 1px solid var(--secondary-colour);
+  padding: 1.1rem;
+  margin: 1rem;
+}
+
+.question-container p {
+  padding: 1rem 0rem;
+}
+
+.question-container label,
+.question-container input[type="radio"] {
+  padding-left: 0.5rem;
+  margin-right: 0.3rem;
+}
+
+.output {
+  font-size: 1.4rem;
+  text-align: center;
+}

@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fun with Triangles | Area</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>Check Area of a Triangle</p>
+    <nav class="nav-bar">
+      <a href="/isTriangle.html">IsTriangle?</a>
+      <a href="/quiz.html">Quiz</a>
+      <a href="/hypotenuse.html">Hypotenuse</a>
+      <a href="/area.html">Area</a>
+    </nav>
+
+    <h1 class="heading">Check Area of a Triangle</h1>
     <p class="formula">Area of Triangle A = 1/2 (base * height)</p>
-    <label for="base">Base (in cm)</label>
-    <input type="number" name="base" class="input-side" />
-    <label for="base">Height (in cm)</label>
-    <input type="number" name="height" class="input-side" />
-    <button type="submit" class="check-area">Check area</button>
-    <div class="output"></div>
+    <div class="container">
+      <label for="base">Base (in cm)</label>
+      <input type="number" name="base" class="input-side" />
+      <label for="base">Height (in cm)</label>
+      <input type="number" name="height" class="input-side" />
+      <button type="submit" class="check-area">Check area</button>
+      <div class="output"></div>
+    </div>
     <script src="area.js"></script>
   </body>
 </html>

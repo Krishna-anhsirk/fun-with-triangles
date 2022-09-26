@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fun with Triangles | Hypotenuse</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Compute Hypotenuse</h1>
+    <nav class="nav-bar">
+      <a href="/isTriangle.html">IsTriangle?</a>
+      <a href="/quiz.html">Quiz</a>
+      <a href="/hypotenuse.html">Hypotenuse</a>
+      <a href="/area.html">Area</a>
+    </nav>
+
+    <h1 class="heading">Compute Hypotenuse</h1>
     <p class="formula">Length of Hypotenuse = sqrt(a² + b²)</p>
-    <p>Enter angle values</p>
-    <label for="angle-a">a = </label>
-    <input type="text" name="angle-a" class="input-angle" />
-    <label for="angle-b">b = </label>
-    <input type="text" name="angle-b" class="input-angle" />
-    <button type="submit" class="calculate-hypotenuse">
-      Calculate Hypotenuse
-    </button>
-    <div class="output"></div>
+    <p class="heading__subtitle">Enter side values (in cm)</p>
+
+    <div class="container">
+      <label for="angle-a">a = </label>
+      <input type="text" name="angle-a" class="input-angle" />
+      <label for="angle-b">b = </label>
+      <input type="text" name="angle-b" class="input-angle" />
+      <button type="submit" class="calculate-hypotenuse">
+        Calculate Hypotenuse
+      </button>
+      <div class="output"></div>
+    </div>
     <script src="hypotenuse.js"></script>
   </body>
 </html>

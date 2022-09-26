@@ -14,7 +14,7 @@ function calculateScore() {
     }
     index++;
   }
-  output.innerText = `Score is ${score}`;
+  output.innerText = `Yay, your score is ${score}`;
 }
 
 submitQuiz.addEventListener("click", calculateScore);
