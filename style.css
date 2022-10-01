@@ -90,3 +90,26 @@ body {
   font-size: 1.4rem;
   text-align: center;
 }
+
+/* Footer  */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 45vw;
+}
+
+a,
+img,
+li {
+  display: inline;
+}
+
+img {
+  width: 40px;
+  padding: 1rem 0.2rem;
+}
+
+.footer-quiz {
+  position: relative;
+  left: 45vw;
+}
