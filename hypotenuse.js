@@ -10,13 +10,13 @@ function calculateHypotenuse() {
   const side1 = Number(inputSides[0].value);
   const side2 = Number(inputSides[1].value);
 
-  if (!side1 || !side2) {
-    output.innerText = "Please enter all the values 😡";
+  if (side1 <= 0 || side2 <= 0) {
+    output.innerText = "Please enter valid values 😑";
     return;
   }
 
-  if (side1 <= 0 || side2 <= 0) {
-    output.innerText = "Please enter valid values 😑";
+  if (!side1 || !side2) {
+    output.innerText = "Please enter all the values 😡";
     return;
   }
 

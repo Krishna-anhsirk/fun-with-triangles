@@ -6,13 +6,13 @@ function calculateArea() {
   const base = Number(inputSide[0].value);
   const height = Number(inputSide[1].value);
 
-  if (!base || !height) {
-    output.innerText = "Please enter all the values 😡";
+  if (base <= 0 || height <= 0) {
+    output.innerText = "Please enter valid values 😑";
     return;
   }
 
-  if (base <= 0 || height <= 0) {
-    output.innerText = "Please enter valid values 😑";
+  if (!base || !height) {
+    output.innerText = "Please enter all the values 😡";
     return;
   }
 
