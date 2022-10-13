@@ -1,18 +1,28 @@
-const inputAngles = document.querySelectorAll(".input-angle");
+const inputSides = document.querySelectorAll(".input-side");
 const calcHypotenuse = document.querySelector(".calculate-hypotenuse");
 const output = document.querySelector(".output");
 
-function calculateSumOfSquares(angle1, angle2) {
-  return angle1 * angle1 + angle2 * angle2;
+function calculateSumOfSquares(side1, side2) {
+  return side1 * side1 + side2 * side2;
 }
 
 function calculateHypotenuse() {
-  const sumOfSquares = calculateSumOfSquares(
-    Number(inputAngles[0].value),
-    Number(inputAngles[1].value)
-  );
+  const side1 = Number(inputSides[0].value);
+  const side2 = Number(inputSides[1].value);
 
-  const hypotenuseLength = Math.sqrt(sumOfSquares);
+  if (!side1 || !side2) {
+    output.innerText = "Please enter all the values 😡";
+    return;
+  }
+
+  if (side1 <= 0 || side2 <= 0) {
+    output.innerText = "Please enter valid values 😑";
+    return;
+  }
+
+  const sumOfSquares = calculateSumOfSquares(side1, side2);
+
+  const hypotenuseLength = Math.sqrt(sumOfSquares).toFixed(2);
   output.innerText = `The length of Hypotenuse is ${hypotenuseLength} cm`;
 }
 

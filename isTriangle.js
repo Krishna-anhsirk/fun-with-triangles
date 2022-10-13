@@ -7,11 +7,19 @@ function calculateSumOfAngles(angle1, angle2, angle3) {
 }
 
 function isTriangle() {
-  const sumOfAngles = calculateSumOfAngles(
-    Number(angles[0].value),
-    Number(angles[1].value),
-    Number(angles[2].value)
-  );
+  const angle1 = Number(angles[0].value);
+  const angle2 = Number(angles[1].value);
+  const angle3 = Number(angles[2].value);
+
+  if (!angle1 || !angle2 || !angle3) {
+    output.innerText = "Please enter all the values 😡";
+    return;
+  }
+  if (angle1 <= 0 || angle2 <= 0 || angle3 <= 0) {
+    output.innerText = "Please enter valid values 😑";
+    return;
+  }
+  const sumOfAngles = calculateSumOfAngles(angle1, angle2, angle3);
   if (sumOfAngles === 180) {
     output.innerText = "Yay, the given angles can form a triangle 😁";
   } else {
